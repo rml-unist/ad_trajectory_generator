@@ -1,4 +1,6 @@
-# Trajectory Generator
+# 자율주행 차량 제어를 위한 참조 궤적 생성 프로그램
+
+Reference Trajectory Generator for Autonomous Vehicle Control
 
 이 프로그램은 nuPlan 데이터셋에서 자율주행 차량이 계획한 궤적과 초기 차량 상태를 받아 제어기가 추종할 참조 궤적을 생성하는 프로그램입니다.
 계획 경로의 이동 거리와 시간 간격으로 목표 속도를 구하고 가감속 제약을 반영한 뒤, 운동학 모델 기반 예측 제어(KMPC)로 참조 위치, 헤딩, 속도, 가속도, 조향각을 계산합니다.
